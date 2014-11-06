@@ -1,0 +1,104 @@
+
+        <div class="containt">
+            <div class="arrondi ar1" ng-click="agence ='equipe'">Notre équipe</div>
+            <div class="arrondi ar2" ng-click="agence ='agence'">L'agence</div>
+            <div class="arrondi ar3" ng-click="agence ='contact'">Contact</div>
+            <div class="dialog1" class=" animated hinge" ng-show="agence ==='equipe'">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+				<div class="item"><h1>1</h1></div>
+				<div class="item"><h1>2</h1></div>
+				<div class="item"><h1>3</h1></div>
+				<div class="item"><h1>4</h1></div>
+				<div class="item"><h1>5</h1></div>
+				<div class="item"><h1>6</h1></div>
+				</div>
+				<div class="customNavigation">
+				<a class="btn prev">Previous</a>
+				<a class="btn next">Next</a>
+				<a class="btn play">Autoplay</a>
+				<a class="btn stop">Stop</a>
+				</div>
+            </div>
+            <div class="dialog2" ng-show="agence ==='agence'">
+                <h1>L'agence</h1>
+                <p>WOOP est une agence de création multimédia créée en 
+                    2014 lors d'une réunion regroupant les deux spécialités de 
+                    la licence ATC de l'IUT de Bobigny.
+                    À partir de cette convergence, l'agence n'a eu qu'un seul 
+                    but être proche de ses clients et leur offrir des réponses 
+                    innovantes et décalées.</p>
+                    <h1>Pourquoi nous choisir ?</h1>
+                    <p>Pour répondre à vos aux exigences, les membres de l’équipe mettent à votre
+                       disposition leurs compétences, leurs expertises et leurs savoirs faire.
+                       Leur but est de faire la promotion de votre (entreprise), de vos activités ( et/ou de
+                       vos produits), d’accroître votre visibilité sur le web, d’améliorer votre position sur le
+                       marché dans votre secteur d’activité.
+                       Donner de la valeur à votre activité, entreprise ou produits.
+                       Nous nous engageons à construire un projet fiable,
+                       nous vous proposons la conception de site web adpaté mobile.
+                       Mais également l’élaboration du cahier des charges,
+                       le référencement de votre produit
+                       ainsi qu’une assistance et aide à la définition de votre projet multimédia.
+                    </p>
+            </div>
+            <div class="dialog3" ng-show="agence ==='contact'">
+                <center><h1>Contact</h1></center>
+                <p>Localisation<br />IUT Bobigny - Université Paris 13<br />1 Rue Chablis<br />93000 Bobigny</p>
+                <form id="contact-form" action="/" method="post">
+			<div>
+                            <label>
+                                    <input placeholder="Nom et/ou prenom" type="text" tabindex="1" required autofocus>
+                            </label>
+			</div>
+			<div>
+                            <label>
+                                    <input placeholder="Email" type="email" tabindex="2" required>
+                            </label>
+			</div>
+			<div>
+                            <label>
+                                    <input placeholder="Sujet" type="tel" tabindex="3" required>
+                            </label>
+                        </div>
+			<div>
+                            <label>
+                                    <textarea placeholder="Message" tabindex="5" required></textarea>
+                            </label>
+			</div>
+			<div>
+                            <button name="submit" type="submit" id="contact-submit">Envoyer</button>
+			</div>
+    
+		</form>
+            </div>
+        </div>
+        <script type="text/javascript">
+			$(document).ready(function() {
+ 
+  var owl = $("#owl-demo");
+ 
+  owl.owlCarousel({
+      items : 1, //10 items above 1000px browser width
+      itemsDesktop : [1000,1], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,1], // betweem 900px and 601px
+      itemsTablet: [600,1], //2 items between 600 and 0
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  });
+ 
+  // Custom Navigation Events
+  $(".next").click(function(){
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
+  })
+  $(".play").click(function(){
+    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+  })
+  $(".stop").click(function(){
+    owl.trigger('owl.stop');
+  })
+ 
+});
+</script>
+        

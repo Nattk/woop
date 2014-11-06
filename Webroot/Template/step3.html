@@ -1,0 +1,55 @@
+
+<section class="containtTabP" >
+	<ul class="pills">
+		<li ng-class="{active: tabP===1}"><a href  ng-click="tabP=1" class="upload"></a></li>
+		<li ng-class="{active: tabP===2}"><a href ng-click="tabP=2" class="facebook"></a></li>
+		<li ng-class="{active: tabP===3}"><a href ng-click="tabP=3"  class="instagram"></a></li>
+	</ul>
+
+	<div class="panel" ng-show="tabP ===1" style="overflow-x: auto">
+		<div class="col-xs-6 col-md-6" ng-repeat="photo in uploadPhoto" style="height= 20%;">
+			<span  class="thumbnail">
+				<img src="{{photo.url}}" alt="photo uploader">
+			</span>
+		</div>
+	</div>
+	<div class="panel"  ng-show="tabP ===2" style="overflow-x: auto">
+		<div ng-show="vAlbum">
+			<div class="col-xs-6 col-md-6" ng-repeat="album in facebookAlbums" style="height= 20%;">
+				<span  class="thumbnail" ng-click="getPhotoAbum(album.id)">
+					<p >{{album.name}}" </p>
+				</span>
+			</div>
+		</div>
+		<div ng-show="!vAlbum">
+		<button ng-click ="vAlbum = true">back albums </button>
+			<div class="col-xs-6 col-md-6" ng-repeat="photo in facebookPhoto" style="height= 20%;">
+				<span  class="thumbnail">
+					<img src="{{photo.source}}" alt="photo Facebook">
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="panel" class="panel-pict" ng-show="tabP ===3">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vitae ad aut eum voluptatibus quasi ipsam, odio sapiente eligendi officia dolorum explicabo cumque quos atque reprehenderit dolores assumenda culpa quas.
+	</div>							
+</section>
+<section class="containtStepCanvas" id="containtStepCanvas">
+
+</section>
+	<section class="containtTabC" >
+	<span class="cercle" ng-repeat="coque in coques " ng-if="coque.rigidite === myRigidite" style = "background-color:{{coque.color}} ; clear:both;"
+	 ng-click="changeColor($index)"></span>
+	<select ng-model="gatRigidite " ng-init="gatRigidite=myRigidite"  ng-options="r.val for r in rigidites |filter:unique" ng-selected="myRigidite" value="{{myRigidite}}"></select>
+	<ul class="pills">
+	<li><a href  ng-click="tabC=1" >grille</a></li>
+	<li><a href ng-click="tabC=2" >filtre</a></li>
+	</ul>
+
+	<div class="panel" ng-show="tabC ===1">fsdfsdfsdf</div>
+	<div class="panel"  class="mouseWheel-container" ng-show="tabC === 2" >
+
+	</div>
+
+</section>
+

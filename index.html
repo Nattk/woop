@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" lang="fr"  >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Agence woop</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+		<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+		<link href="Webroot/Css/animate.css" rel="stylesheet" type="text/css" media="screen" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link href="Webroot/Css/app.css" rel="stylesheet" type="text/css" media="screen" />
+<!--		<link rel="stylesheet" type="text/css" href="Webroot/Css/projets.css">-->
+		<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,600,700' rel='stylesheet' type='text/css'>
+		<script src="Webroot/Js/modernizr.custom.63321.js"></script>
+	</head>
+    <body ng-app="woop" ng-controller="mainCtrl as main">
+    	<div class="bg"></div>
+<header class="header_principal">
+<div class="lineB"></div>
+
+<img src="/projects/woop/Webroot/Img/woop_logo.png" alt="logo Agence" class="logo">
+<div class="lineA"></div>
+
+</header>
+<div  ng-view class ="animated fadeInRightBig"></div>
+
+<footer class="line">
+<nav >
+	<ul>
+		<li class="home" ng-class="{active :val === ''}" ng-click="switch('')"></li>
+		<li class="agence " ng-class="{active :val === 'agence'}"   ng-click="switch('agence') "></li>
+		<li class="projet" ng-class="{active :val === 'projet'}"  ng-click="switch('projet') "></li>
+		<li class="contact" ng-class="{active :val === 'email'}"  ng-click="switch('projet') "></li>
+	</ul>
+</nav>
+</footer>
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="Webroot/Js/angular-1.2.18/angular.min.js"></script>
+<script type="text/javascript" src="Webroot/Js/angular-1.2.18/angular-route.min.js"></script>
+<script type="text/javascript" src="Webroot/Js/angular-1.2.18/angular-touch.js"></script>
+<script type="text/javascript" src="Webroot/Js/route.js"></script>
+<script type="text/javascript" src="Webroot/Js/app.js"></script>
+<script src="Webroot/Js/owl/owl.carousel.min.js"></script>
+<!--/silder-->    
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!--boostrap-->
+<!--browserUpdate-->
+<script type="text/javascript"> 
+var $buoop = {}; 
+$buoop.ol = window.onload; 
+window.onload=function(){ 
+    try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+    var e = document.createElement("script"); 
+    e.setAttribute("type", "text/javascript"); 
+    e.setAttribute("src", "//browser-update.org/update.js"); 
+    document.body.appendChild(e); 
+} 
+</script>
+<!--/browserUpdate-->
+</body>
+</html>

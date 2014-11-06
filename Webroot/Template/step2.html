@@ -1,0 +1,82 @@
+
+<form  enctype="multipart/form-data">
+	<input  name="image" id="upl" type="file" class="hidden" onChange="angular.element('step2').scope().uploadFile() "></input>
+	<input  id="oks"type="submit" class="hidden"></input>
+</form>
+<div class="mainSteps2background"></div>
+<div class="mainSteps2">
+	<div class="login upload " onClick="uploadL();">
+		<span >
+			<h1>Depuis ton Ordi</h1>
+			<p>
+				Télécharge tes photos 
+				préférées et personnalise 
+				la coque de ton portable.
+			</p>
+		</span></div>
+	<div class="login facebook" onClick="InstConct();">
+		<span >
+			<h1>Depuis ton Facebook</h1>
+			<p>
+				Choisis dans ta bibliotheque
+				tes meilleurs clichés pour une personnalisation de ton smartphone.
+			</p>
+		</span>
+	</div>
+	
+	<div class="login instagram" onClick="OpenInNewTab('https://api.instagram.com/oauth/authorize/?client_id=35f018b5852f4422be08e04950028ad2&redirect_uri=http://localhost/projects/swaii/custom_2/&response_type=code');">
+		<span >
+			<h1>Depuis ton Instagram</h1>
+			<p>
+				Utilise tes créations pour
+				mettre en valeur 
+				ta coque de téléphone personnalisable.
+			</p>
+		</span>
+	</div>
+	
+</div>
+<script language="javascript">
+	 /*--gestion des fichier uploader --*/ 
+    var uploadL = function(){
+        $("#upl").click();
+    };
+	function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+        /*--/gestion des fichier uploader --*/ 
+        /*--gestion de upload --*/
+        /*--/gestion de upload --*/
+</script>
+
+		<!--
+
+        <script language="javascript">		
+			function InstConct(){
+				<?php if ($_COOKIE["is_it"]!='') { ?>
+					var feed = new Instafeed({
+						get: 'user',
+						userId: <?php echo $_COOKIE["is_it"] ?>,
+						accessToken: '<?php echo $_COOKIE["is_at"] ?>',
+						template: '<li id="{{image}}"><img class="bouger ui-draggable" data-h="612" data-w="612" data-thumb="/coque-smartphone/thumb_insta.jpg" data-source="{{image}}" src="{{image}}" height="100" /></li>',
+						resolution : 'standard_resolution',
+						before : function () { loading(true,'Chargement de vos photos instagram'); },
+						after: function () {  loading(false,''); drag(); }
+					});
+					feed.run();	
+				<?php 
+					} else { 
+						if (strpos(strtoupper($_SERVER['HTTP_HOST']),'WWW') === false) {
+							echo "window.location.href='/include/login_insta_sub.php';";
+						} else {
+							echo "window.location.href='/include/login_insta.php';";
+						}
+					 }
+				?>
+			} // 
+			
+			
+			
+        </script>
+		-->

@@ -1,0 +1,116 @@
+
+.bouton1
+{
+width:  100px;
+height: 100px;
+border: 3px solid #c02f35;
+border-radius:50%;
+background-color:black;
+color:#fff;
+text-align:center;
+float:left;
+font-family:"Berlin sans fb";
+font-size:20px;
+margin-top:10%;
+
+}
+
+
+.bouton2
+{
+width:  50px;
+height: 50px;
+border: 2px solid #FFFF00;
+border-radius:50%;
+background-color:black;
+color:#fff;
+text-align:center;
+float:left;
+
+}
+
+.bouton3
+{
+width:  50px;
+height: 50px;
+border: 2px solid #9b59b6;
+border-radius:50%;
+background-color:black;
+color:#fff;
+text-align:center;
+float:left;
+
+
+
+}
+
+button
+{
+margin-top:11.5%;
+margin-left:9%;
+transition:0.1s;
+
+}
+
+.bouton1:hover
+{
+cursor:pointer;
+border: 5px solid #c02f35;
+}
+.bouton2:hover
+{
+cursor:pointer;
+border: 5px solid #FFFF00;
+}
+.bouton3:hover
+{
+cursor:pointer;
+border: 5px solid #9b59b6;
+}
+.trait
+{
+border-bottom:5px solid #fff;
+width:75%;
+margin-top:13%;
+margin-left:12%;
+
+}
+
+
+
+
+
+.content
+{
+background-color:black;
+height:600px;
+width:100%;
+border:2px solid black;
+margin-top: 45%;
+margin-bottom:50%;
+margin-left:auto;
+margin-right:auto;
+font-family:"Berlin sans fb";
+
+}
+
+.date{
+
+width:25%;
+color:#fff;
+font-size:50px;
+float:left;
+margin-left:-5%;
+margin-top:4%;
+}
+
+
+.parag{
+	font-family: 'BRLNSR';
+margin-left:42%;
+margin-top:5%;
+width:25%;
+color:#fff;
+font-size:50px;
+
+}
