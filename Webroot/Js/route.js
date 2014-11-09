@@ -16,7 +16,7 @@ route.config(function($routeProvider, $locationProvider) {
   })
   .when('/projects/woop/agence', {
     templateUrl: '../woop/Webroot/Template/agence.html',
-	
+	controller: 'agenceCtrl'
   })
   .when('/projects/woop/projet', {
     templateUrl: '../woop/Webroot/Template/projet.html',

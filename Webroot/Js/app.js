@@ -3,10 +3,8 @@
 var app =angular.module('woop', ['myRoute','ngRoute' ]);
 app.controller("mainCtrl", function($scope,$http, $q ,$rootScope, $route, $routeParams, $location) {
 $scope.val = "";
-	$scope.agence = "equipe";
 	$scope.switch = function(val)
 	{
-		
 		if(val ==="")
 		{
 			$scope.val = "home";
@@ -17,7 +15,10 @@ $scope.val = "";
 	}	
 
 });
-	
+app.controller("agenceCtrl", function($scope,$http, $q ,$rootScope, $route, $routeParams, $location) {
+$scope.build = 'agence';
+	$scope.val = 'agence';
+});	
 
 
 })(jQuery,angular);

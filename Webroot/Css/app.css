@@ -8203,7 +8203,7 @@ button.close {
   }
 }
 /*Variables*/
-/* line 10, ../sass/app.scss */
+/* line 11, ../sass/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8212,7 +8212,7 @@ button.close {
   padding: 0;
 }
 
-/* line 16, ../sass/app.scss */
+/* line 17, ../sass/app.scss */
 body {
   overflow: hidden;
 }
@@ -8228,21 +8228,8 @@ body {
   @include make-md-column(8);
   @include make-md-column-offset(2);
 */
-/* line 32, ../sass/app.scss */
+/* line 33, ../sass/app.scss */
 .logo {
-  width: 150px;
-  height: 100px;
-  margin-left: -5px;
-}
-/* line 37, ../sass/app.scss */
-.logo:hover {
-  cursor: pointer;
-}
-
-/* line 42, ../sass/app.scss */
-.lineB {
-  float: left;
-  display: block;
   position: relative;
   float: left;
   width: 8.3333333333%;
@@ -8257,50 +8244,68 @@ body {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 0%;
-  height: 25px;
-  margin-top: 40px;
+  margin-left: 8.3333333333%;
+  height: 100px;
+  background-image: url(../Img/woop_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 992px) {
+  /* line 33, ../sass/app.scss */
+  .logo {
+    float: left;
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 33, ../sass/app.scss */
+  .logo {
+    float: left;
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 33, ../sass/app.scss */
+  .logo {
+    margin-left: 8.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 33, ../sass/app.scss */
+  .logo {
+    margin-left: 8.3333333333%;
+  }
+}
+/* line 46, ../sass/app.scss */
+.logo:hover {
+  cursor: pointer;
+}
+/* line 50, ../sass/app.scss */
+.logo::before {
+  content: "";
+  height: 10px;
+  width: 125px;
+  float: left;
+  position: absolute;
   background-color: #000;
+  margin-left: -150px;
+  margin-top: 35px;
+  z-index: 0;
 }
-@media (min-width: 992px) {
-  /* line 42, ../sass/app.scss */
-  .lineB {
-    float: left;
-    width: 8.3333333333%;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 42, ../sass/app.scss */
-  .lineB {
-    float: left;
-    width: 8.3333333333%;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 42, ../sass/app.scss */
-  .lineB {
-    margin-left: 0%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 42, ../sass/app.scss */
-  .lineB {
-    margin-left: 0%;
-  }
-}
-
-/* line 56, ../sass/app.scss */
-.lineA {
-  float: right;
+/* line 62, ../sass/app.scss */
+.logo::after {
+  content: "";
+  position: absolute;
   display: block;
-  width: 82%;
-  height: 40px;
-  margin-top: 40px;
-  margin-right: 0px;
+  height: 10px;
+  width: 1000px;
+  margin-left: 120px;
+  margin-top: 35px;
   background-color: #000;
+  z-index: 0;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 .content {
   height: 580px;
   position: relative;
@@ -8324,45 +8329,45 @@ body {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   .content {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   .content {
     margin-left: 0%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 66, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   .content {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 66, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   .content {
     margin-left: 0%;
   }
 }
 @media (min-width: 992px) {
-  /* line 66, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   .content {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 66, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   .content {
     margin-left: 0%;
   }
 }
-/* line 77, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 .content .fd {
   height: 580px;
   position: relative;
@@ -8390,46 +8395,46 @@ body {
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/app.scss */
+  /* line 87, ../sass/app.scss */
   .content .fd {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/app.scss */
+  /* line 87, ../sass/app.scss */
   .content .fd {
     margin-left: 0%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 77, ../sass/app.scss */
+  /* line 87, ../sass/app.scss */
   .content .fd {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 77, ../sass/app.scss */
+  /* line 87, ../sass/app.scss */
   .content .fd {
     margin-left: 0%;
   }
 }
 @media (min-width: 992px) {
-  /* line 77, ../sass/app.scss */
+  /* line 87, ../sass/app.scss */
   .content .fd {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 77, ../sass/app.scss */
+  /* line 87, ../sass/app.scss */
   .content .fd {
     margin-left: 0%;
   }
 }
-/* line 93, ../sass/app.scss */
-.content p {
+/* line 103, ../sass/app.scss */
+.content .p {
   font-family: 'Poiret One', cursive;
   margin-left: 45%;
   margin-top: 15%;
@@ -8438,14 +8443,14 @@ body {
   text-decoration: underline;
   transition: 1s ease-out;
 }
-/* line 103, ../sass/app.scss */
-.content p:last-child {
+/* line 113, ../sass/app.scss */
+.content .p:last-child {
   margin-top: 1%;
   margin-left: 50%;
   font-size: 3em;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 120, ../sass/app.scss */
 footer {
   position: fixed;
   margin-bottom: 20px;
@@ -8472,45 +8477,45 @@ footer {
   height: 50px;
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/app.scss */
+  /* line 120, ../sass/app.scss */
   footer {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/app.scss */
+  /* line 120, ../sass/app.scss */
   footer {
     margin-left: 0%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 110, ../sass/app.scss */
+  /* line 120, ../sass/app.scss */
   footer {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 110, ../sass/app.scss */
+  /* line 120, ../sass/app.scss */
   footer {
     margin-left: 0%;
   }
 }
 @media (min-width: 992px) {
-  /* line 110, ../sass/app.scss */
+  /* line 120, ../sass/app.scss */
   footer {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 110, ../sass/app.scss */
+  /* line 120, ../sass/app.scss */
   footer {
     margin-left: 0%;
   }
 }
-/* line 124, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 footer ul li {
   list-style: none;
   position: relative;
@@ -8539,468 +8544,411 @@ footer ul li {
   margin-top: -15px;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   footer ul li {
     float: left;
     width: 8.3333333333%;
   }
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   footer ul li {
     margin-left: 0%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 124, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   footer ul li {
     float: left;
     width: 8.3333333333%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 124, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   footer ul li {
     margin-left: 0%;
   }
 }
 @media (min-width: 992px) {
-  /* line 124, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   footer ul li {
     float: left;
     width: 8.3333333333%;
   }
 }
 @media (min-width: 992px) {
-  /* line 124, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   footer ul li {
     margin-left: 0%;
   }
 }
-/* line 141, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 footer .home {
   background-image: url(../Img/door.png);
   -webkit-transition: 1s;
 }
 @media (min-width: 992px) {
-  /* line 141, ../sass/app.scss */
+  /* line 151, ../sass/app.scss */
   footer .home {
     margin-left: 33.3333333333%;
   }
 }
-/* line 146, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 footer .home:hover {
   height: 100px;
   margin-top: -40px;
   cursor: pointer;
 }
-/* line 152, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
 footer .home.active {
   height: 100px;
   margin-top: -40px;
 }
-/* line 158, ../sass/app.scss */
+/* line 168, ../sass/app.scss */
 footer .agence {
   background-image: url(../Img/Icon_logo.png);
   -webkit-transition: 1s;
 }
-/* line 162, ../sass/app.scss */
+/* line 172, ../sass/app.scss */
 footer .agence:hover {
   height: 100px;
   margin-top: -40px;
   cursor: pointer;
 }
-/* line 169, ../sass/app.scss */
+/* line 178, ../sass/app.scss */
+footer .agence.active {
+  height: 100px;
+  margin-top: -40px;
+}
+/* line 184, ../sass/app.scss */
 footer .projet {
   background-image: url(../Img/brightness.png);
   -webkit-transition: 1s;
 }
-/* line 173, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 footer .projet:hover {
   height: 100px;
   margin-top: -40px;
   cursor: pointer;
 }
-/* line 180, ../sass/app.scss */
+/* line 194, ../sass/app.scss */
+footer .projet.active {
+  height: 100px;
+  margin-top: -40px;
+}
+/* line 200, ../sass/app.scss */
 footer .contact {
   background-image: url(../Img/mail.png);
   -webkit-transition: 1s;
 }
-/* line 184, ../sass/app.scss */
+/* line 204, ../sass/app.scss */
 footer .contact:hover {
   height: 100px;
   margin-top: -40px;
   cursor: pointer;
 }
-
-/* line 195, ../sass/app.scss */
-.ar1 {
-  border: 5px solid #FFFF00;
-  border-radius: 50%;
-  width: 8%;
-  height: 17%;
-  color: white;
-  line-height: 630%;
-  text-align: center;
-  /*positionnement*/
-  margin-left: 40px;
-  margin-top: 70px;
-  transition: 0.1s;
-  background-color: black;
-}
-
-/* line 209, ../sass/app.scss */
-.ar2 {
-  border: 5px solid #c02f35;
-  border-radius: 50%;
-  width: 8%;
-  height: 17%;
-  color: white;
-  line-height: 630%;
-  text-align: center;
-  /*positionnement*/
-  margin-left: 40px;
-  margin-top: 70px;
-  transition: 0.1s;
-  background-color: black;
-}
-
-/* line 223, ../sass/app.scss */
-.ar3 {
-  border: 5px solid #9b59b6;
-  border-radius: 50%;
-  width: 8%;
-  height: 17%;
-  color: white;
-  line-height: 630%;
-  text-align: center;
-  /*positionnement*/
-  margin-left: 40px;
-  margin-top: 70px;
-  transition: 0.1s;
-  background-color: black;
-}
-
-/* line 237, ../sass/app.scss */
-.arrondi:hover {
-  cursor: pointer;
-}
-
-/* line 240, ../sass/app.scss */
-.ar1:hover {
-  border: 10px solid #FFFF00;
-}
-
-/* line 243, ../sass/app.scss */
-.ar2:hover {
-  border: 10px solid #c02f35;
-}
-
-/* line 246, ../sass/app.scss */
-.ar3:hover {
-  border: 10px solid #9b59b6;
-}
-
-/* line 250, ../sass/app.scss */
-.dialog1 {
-  border: 10px solid #FFFF00;
-  position: absolute;
-  top: 80px;
-  right: 5%;
-  left: 20%;
-  height: 450px;
-  border-radius: 100px;
-}
-
-/* line 259, ../sass/app.scss */
-.dialog1 p {
-  position: absolute;
-  right: 100px;
-  top: 125px;
-  width: 43%;
-  text-align: center;
-}
-
-/* line 266, ../sass/app.scss */
-.dialog1 img {
-  height: 200px;
-  left: 70px;
-  position: absolute;
-  top: 130px;
-  width: 200px;
-}
-
-/* line 273, ../sass/app.scss */
-.dialog2 {
-  border: 10px solid #c02f35;
-  position: absolute;
-  top: 80px;
-  right: 5%;
-  left: 20%;
-  height: 450px;
-  border-radius: 100px;
-}
-
-/* line 282, ../sass/app.scss */
-.dialog2 p {
-  margin-left: 40px;
-  top: 125px;
-  width: 90%;
-  text-align: center;
-}
-
-/* line 288, ../sass/app.scss */
-.dialog3 {
-  border: 10px solid #9b59b6;
-  position: absolute;
-  top: 80px;
-  right: 5%;
-  left: 20%;
-  height: 450px;
-  border-radius: 100px;
-}
-
-/* line 297, ../sass/app.scss */
-.dialog3 p {
-  margin-right: 60px;
-  margin-top: 80px;
-  float: right;
-  text-align: center;
-}
-
-/* line 303, ../sass/app.scss */
-.icon {
-  left: 700px;
-  position: absolute;
-  top: 315px;
-}
-
-/* line 308, ../sass/app.scss */
-.icon a {
-  margin-left: 10px;
-}
-
-/*FORMULAIRE*/
-/* line 313, ../sass/app.scss */
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea,
-#contact-form button[type="submit"] {
-  font: 400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 321, ../sass/app.scss */
-#contact-form {
-  text-shadow: 0 1px 0 #FFF;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  padding: 25px;
-}
-
-/* line 328, ../sass/app.scss */
-#contact-form label span {
-  cursor: pointer;
-  color: #991D57;
-  display: block;
-  margin: 5px 0;
-  font-weight: 900;
-}
-
-/* line 335, ../sass/app.scss */
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea {
-  width: 60%;
-  box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-  -webkit-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-  -moz-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
-  border: 1px solid #CCC;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-/* line 350, ../sass/app.scss */
-#contact-form textarea {
+/* line 210, ../sass/app.scss */
+footer .contact.active {
   height: 100px;
-  max-width: 100%;
+  margin-top: -40px;
 }
 
-/* line 354, ../sass/app.scss */
-#contact-form button[type="submit"] {
-  cursor: pointer;
-  width: 62.5%;
-  border: none;
-  background: #A10684;
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  border-radius: 5px;
+/* line 218, ../sass/app.scss */
+.navA {
+  float: left;
+  position: relative;
+  float: left;
+  width: 16.6666666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 218, ../sass/app.scss */
+  .navA {
+    float: left;
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 218, ../sass/app.scss */
+  .navA {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 218, ../sass/app.scss */
+  .navA {
+    float: left;
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 218, ../sass/app.scss */
+  .navA {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 218, ../sass/app.scss */
+  .navA {
+    float: left;
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 218, ../sass/app.scss */
+  .navA {
+    margin-left: 0%;
+  }
 }
 
-/* line 364, ../sass/app.scss */
-#contact-form button[type="submit"]:hover {
-  background-image: linear-gradient(to top, #9c215a 0%, #a82767 52%);
-  background-image: -moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-  background-image: -webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* line 372, ../sass/app.scss */
-#contact-form button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* line 375, ../sass/app.scss */
-#contact-form input:focus,
-#contact-form textarea:focus {
-  outline: 0;
-  border: 1px solid #999;
-}
-
-/* line 380, ../sass/app.scss */
-::-webkit-input-placeholder {
-  color: #888;
-}
-
-/* line 383, ../sass/app.scss */
-:-moz-placeholder {
-  color: #888;
-}
-
-/* line 386, ../sass/app.scss */
-::-moz-placeholder {
-  color: #888;
-}
-
-/* line 389, ../sass/app.scss */
-:-ms-input-placeholder {
-  color: #888;
-}
-
-/* line 394, ../sass/app.scss */
-.bouton1 {
+/* line 231, ../sass/app.scss */
+.cercle {
+  border-radius: 50%;
+  height: 100px;
   width: 100px;
-  height: 100px;
-  border: 3px solid #c02f35;
-  border-radius: 50%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  float: left;
-  font-family: "Berlin sans fb";
-  font-size: 20px;
-  margin-top: 10%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  background-image: url(../Img/megaphone2.png);
+}
+/* line 243, ../sass/app.scss */
+.cercle:hover {
+  cursor: pointer;
+  background-image: url(../Img/megaphone2_color.png);
+}
+/* line 248, ../sass/app.scss */
+.cercle:hover {
+  cursor: pointer;
+  background-image: url(../Img/megaphone2_color.png);
+}
+/* line 254, ../sass/app.scss */
+.cercle.active {
+  background-image: url(../Img/megaphone2_color.png);
 }
 
-/* line 410, ../sass/app.scss */
-.bouton2 {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #FFFF00;
-  border-radius: 50%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  float: left;
+/* line 260, ../sass/app.scss */
+.cercle:last-of-type {
+  background-image: url(../Img/polaroids.png);
+}
+/* line 264, ../sass/app.scss */
+.cercle:last-of-type:hover {
+  background-image: url(../Img/polaroids_color.png);
+}
+/* line 268, ../sass/app.scss */
+.cercle:last-of-type.active {
+  background-image: url(../Img/polaroids_color.png);
 }
 
-/* line 423, ../sass/app.scss */
-.bouton3 {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #9b59b6;
-  border-radius: 50%;
-  background-color: black;
+/* line 274, ../sass/app.scss */
+div.build {
+  width: 800px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow: 0px 0px 14px #000000;
+  -webkit-box-shadow: 0px 0px 14px #000000;
+  box-shadow: 0px 0px 14px #000000;
+}
+/* line 288, ../sass/app.scss */
+div.build h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  font-size: 2em;
+  font-family: 'Poiret One', cursive;
+  color: #c02f35;
+}
+/* line 297, ../sass/app.scss */
+div.build h1:last-of-type {
+  width: 40%;
+}
+/* line 303, ../sass/app.scss */
+div.build hr {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 309, ../sass/app.scss */
+div.build p {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1.07em;
   color: #000;
-  text-align: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  text-align: justify;
+  position: relative;
   float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-/* line 438, ../sass/app.scss */
-button {
-  margin-top: 11.5%;
-  margin-left: 9%;
-  transition: 0.1s;
+@media (min-width: 768px) {
+  /* line 309, ../sass/app.scss */
+  div.build p {
+    float: left;
+    width: 50%;
+  }
 }
-
-/* line 446, ../sass/app.scss */
-.bouton1:hover {
-  cursor: pointer;
-  border: 5px solid #c02f35;
+@media (min-width: 768px) {
+  /* line 309, ../sass/app.scss */
+  div.build p {
+    margin-left: 25%;
+  }
 }
-
-/* line 451, ../sass/app.scss */
-.bouton2:hover {
-  cursor: pointer;
-  border: 5px solid #FFFF00;
+@media (min-width: 1200px) {
+  /* line 309, ../sass/app.scss */
+  div.build p {
+    float: left;
+    width: 50%;
+  }
 }
-
-/* line 456, ../sass/app.scss */
-.bouton3:hover {
-  cursor: pointer;
-  border: 5px solid #9b59b6;
+@media (min-width: 1200px) {
+  /* line 309, ../sass/app.scss */
+  div.build p {
+    margin-left: 25%;
+  }
 }
-
-/* line 461, ../sass/app.scss */
-.trait {
-  border-bottom: 5px solid #000;
-  width: 75%;
-  margin-top: 13%;
-  margin-left: 12%;
+@media (min-width: 992px) {
+  /* line 309, ../sass/app.scss */
+  div.build p {
+    float: left;
+    width: 50%;
+  }
 }
-
-/* line 470, ../sass/app.scss */
-.date {
-  width: 25%;
-  color: #fff;
-  font-size: 50px;
-  float: left;
-  margin-left: -5%;
-  margin-top: 4%;
+@media (min-width: 992px) {
+  /* line 309, ../sass/app.scss */
+  div.build p {
+    margin-left: 25%;
+  }
 }
-
-/* line 481, ../sass/app.scss */
-.parag {
-  font-family: 'BRLNSR';
-  margin-left: 42%;
-  margin-top: 5%;
-  width: 25%;
-  color: #fff;
-  font-size: 50px;
+/* line 327, ../sass/app.scss */
+div.build li {
+  list-style: none;
+  display: inline-block;
 }
-
-/* line 491, ../sass/app.scss */
-#owl-demo .item {
-  background: #3fbf79;
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
+/* line 331, ../sass/app.scss */
+div.build li:hover {
+  cursor: grab;
 }
-
-/* line 501, ../sass/app.scss */
-.customNavigation {
-  text-align: center;
+/* line 336, ../sass/app.scss */
+div.build .owl-item {
+  background-color: #c02f35;
+  height: 400px;
 }
-
-/* line 505, ../sass/app.scss */
-.customNavigation a {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
+/* line 341, ../sass/app.scss */
+div.build .button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+}
+/* line 352, ../sass/app.scss */
+div.build .button:first-of-type {
+  background-image: url(../Img/profle.png);
+  margin-left: 210px;
+}
+/* line 356, ../sass/app.scss */
+div.build .button:first-of-type:hover {
+  background-image: url(../Img/profle_color.png);
+}
+/* line 361, ../sass/app.scss */
+div.build .button:nth-child(3) {
+  background-image: url(../Img/brush-pencil.png);
+}
+/* line 364, ../sass/app.scss */
+div.build .button:nth-child(3):hover {
+  background-image: url(../Img/brush-pencil_color.png);
+}
+/* line 368, ../sass/app.scss */
+div.build .button:nth-child(3).active {
+  background-image: url(../Img/brush-pencil_color.png);
+}
+/* line 373, ../sass/app.scss */
+div.build .button:nth-child(4) {
+  background-image: url(../Img/brush-pencil.png);
+}
+/* line 376, ../sass/app.scss */
+div.build .button:nth-child(4):hover {
+  background-image: url(../Img/brush-pencil_color.png);
+}
+/* line 380, ../sass/app.scss */
+div.build .button:nth-child(4).active {
+  background-image: url(../Img/brush-pencil_color.png);
+}
+/* line 385, ../sass/app.scss */
+div.build .button:nth-child(5) {
+  background-image: url(../Img/dev.png);
+}
+/* line 388, ../sass/app.scss */
+div.build .button:nth-child(5):hover {
+  background-image: url(../Img/dev_color.png);
+}
+/* line 392, ../sass/app.scss */
+div.build .button:nth-child(5).active {
+  background-image: url(../Img/dev_color.png);
+}
+/* line 397, ../sass/app.scss */
+div.build .button:nth-child(6) {
+  background-image: url(../Img/dev.png);
+}
+/* line 400, ../sass/app.scss */
+div.build .button:nth-child(6):hover {
+  background-image: url(../Img/dev_color.png);
+}
+/* line 404, ../sass/app.scss */
+div.build .button:nth-child(6).active {
+  background-image: url(../Img/dev_color.png);
+}
+/* line 409, ../sass/app.scss */
+div.build .button:last-of-type {
+  background-image: url(../Img/dev.png);
+}
+/* line 412, ../sass/app.scss */
+div.build .button:last-of-type:hover {
+  background-image: url(../Img/dev_color.png);
+}
+/* line 416, ../sass/app.scss */
+div.build .button:last-of-type.active {
+  background-image: url(../Img/dev_color.png);
 }

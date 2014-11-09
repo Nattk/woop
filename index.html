@@ -16,11 +16,7 @@
     <body ng-app="woop" ng-controller="mainCtrl as main">
     	<div class="bg"></div>
 <header class="header_principal">
-<div class="lineB"></div>
-
-<img src="/projects/woop/Webroot/Img/woop_logo.png" alt="logo Agence" class="logo">
-<div class="lineA"></div>
-
+	<span class="logo" ng-click="switch('')"></span>
 </header>
 <div  ng-view class ="animated fadeInRightBig"></div>
 
@@ -28,9 +24,9 @@
 <nav >
 	<ul>
 		<li class="home" ng-class="{active :val === ''}" ng-click="switch('')"></li>
-		<li class="agence " ng-class="{active :val === 'agence'}"   ng-click="switch('agence') "></li>
+		<li class="agence" ng-class="{active :val === 'agence'}" ng-click="switch('agence')"></li>
 		<li class="projet" ng-class="{active :val === 'projet'}"  ng-click="switch('projet') "></li>
-		<li class="contact" ng-class="{active :val === 'email'}"  ng-click="switch('projet') "></li>
+		<li class="contact" ng-class="{active :val === 'email'}"  ng-click="switch('email') "></li>
 	</ul>
 </nav>
 </footer>
