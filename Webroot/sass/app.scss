@@ -65,7 +65,7 @@ body
 	position: absolute;
 	display: block;
 	height: 10px;
-	width: 1000px;
+	width: 1248px;
 	margin-left: 120px;
 	margin-top: 35px;
 	background-color: #000;
@@ -199,7 +199,7 @@ background-color: #000;
 		}
 	.contact
 		{
-			background-image: url(../Img/mail.png);	
+			background-image: url(../Img/mail_color.png);	
 			-webkit-transition: 1s ; 
 			&:hover
 			{
@@ -418,6 +418,85 @@ div.build
 				background-image: url(../Img/dev_color.png);
 			}
 		}
+	}
+}
+.form
+{
+		@include make-xs-column(6);
+		@include make-xs-column-offset(3);
+		@include make-sm-column(6);
+		@include make-sm-column-offset(3);	
+		@include make-lg-column(6);
+		@include make-lg-column-offset(3);	
+		@include make-md-column(6);
+		@include make-md-column-offset(3);
+		border-color: $violet;
+		border-width: 2px;
+		border-radius: 50%;
+	height: 600px;
+		overflow: hidden;
+		legend 
+		{
+		font-size: 3em;
+		font-family: 'Poiret One', cursive;
+		background-color: $violet; 
+		color:#fff;
+			text-align: center;
+		}
+
+		input,textarea
+		{
+		@include make-xs-column(8);
+		@include make-xs-column-offset(2);
+		@include make-sm-column(8);
+		@include make-sm-column-offset(2);	
+		@include make-lg-column(8);
+		@include make-lg-column-offset(2);	
+		@include make-md-column(8);
+		@include make-md-column-offset(2);
+		@include make-row();
+		height: 30px;
+		font-family: 'Cabin Condensed', sans-serif;
+		font-size: 1.07em;
+		color:  $violet;
+		line-height: inherit;
+		margin-top: 18px;
+		border-color: $violet;
+		border-top-color:$violet;
+		border-width: 3px;
+
+			&:focus
+			{
+				background-color: $violet;
+				color: #fff;
+				border: none;
+				background-image: none;
+				box-shadow: none;
+			}
+		}
+		textarea
+		{
+			height: 100px;
+			resize: none;
+			overflow-x:auto;
+		}
+	.button 
+	{
+		@include make-row();
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		border: none;
+		background-size: contain;
+		background-repeat: no-repeat;
+		-webkit-transition: 1s;
+		margin: 50px 0px 0px 310px;
+		background-image: url(../Img/mail.png);
+			&:hover
+			{
+				background-image: url(../Img/mail_color.png);
+			}
+		
 	}
 }
  

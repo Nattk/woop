@@ -11,7 +11,7 @@ route.config(function($routeProvider, $locationProvider) {
   
   $routeProvider
    .when('/projects/woop/', {
-    templateUrl: '../woop/Webroot/Template/step1.html',
+    templateUrl: '../woop/Webroot/Template/home.html',
 	 
   })
   .when('/projects/woop/agence', {
@@ -21,6 +21,10 @@ route.config(function($routeProvider, $locationProvider) {
   .when('/projects/woop/projet', {
     templateUrl: '../woop/Webroot/Template/projet.html',
 	  
+  })
+  .when('/projects/woop/contact', {
+    templateUrl: '../woop/Webroot/Template/contact.html',
+	  controller: 'contactCtrl'
   })
   .otherwise('/projects/woop/');
 $locationProvider.html5Mode(true);

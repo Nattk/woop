@@ -1,0 +1,15 @@
+<div class="content">
+<form  class="form-horizontal form" novalidate ng-show="stepMail==='form'">
+<fieldset>
+<!-- Form Name -->
+<legend>contact</legend>
+<!-- Text input-->
+    <input   type="email" placeholder="email"  autocomplete="off" required ng-model="contact.mail">
+    <input  type="text" placeholder="sujet"  autocomplete="off" ng-model="contact.subject">                  
+    <textarea   ng-model="contact.content">hello, woop ...</textarea>
+    <button  name="singlebutton" class="button" ng-click="sendEmail()"></button>
+</fieldset>
+</form>
+<div ng-show="stepMail==='wait'"></div>
+<div ng-show="stepMail==='send'"></div>
+</div>
