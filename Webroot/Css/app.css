@@ -5812,7 +5812,7 @@ tbody.collapse.in {
 }
 /* line 16, ../../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.0.1/assets/stylesheets/bootstrap/_breadcrumbs.scss */
 .breadcrumb > li + li:before {
-  content: "/ ";
+  content: "/Â ";
   padding: 0 5px;
   color: #ccc;
 }
@@ -8298,7 +8298,7 @@ body {
   position: absolute;
   display: block;
   height: 10px;
-  width: 1248px;
+  width: 1520px;
   margin-left: 120px;
   margin-top: 35px;
   background-color: #000;
@@ -8433,6 +8433,8 @@ body {
     margin-left: 0%;
   }
 }
+
+
 /* line 103, ../sass/app.scss */
 .content .p {
   font-family: 'Poiret One', cursive;
@@ -8953,11 +8955,13 @@ div.build .button:last-of-type.active {
   background-image: url(../Img/dev_color.png);
 }
 
+
+
+/
 /* line 423, ../sass/app.scss */
 .form {
   position: relative;
   float: left;
-  width: 50%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -8976,15 +8980,22 @@ div.build .button:last-of-type.active {
   padding-right: 15px;
   border-color: #9b59b6;
   border-width: 2px;
-  border-radius: 50%;
-  height: 600px;
+  border-radius: 45%;
+  height: 650px;
   overflow: hidden;
 }
+
+
+
+
+
+
 @media (min-width: 768px) {
   /* line 423, ../sass/app.scss */
   .form {
     float: left;
     width: 50%;
+	
   }
 }
 @media (min-width: 768px) {
@@ -9027,6 +9038,7 @@ div.build .button:last-of-type.active {
   color: #fff;
   text-align: center;
 }
+
 /* line 447, ../sass/app.scss */
 .form input, .form textarea {
   position: relative;
@@ -9064,7 +9076,7 @@ div.build .button:last-of-type.active {
   /* line 447, ../sass/app.scss */
   .form input, .form textarea {
     float: left;
-    width: 66.6666666667%;
+   width: 66.6666666667%;
   }
 }
 @media (min-width: 768px) {
@@ -9136,6 +9148,8 @@ div.build .button:last-of-type.active {
   margin: 50px 0px 0px 310px;
   background-image: url(../Img/mail.png);
 }
+
+
 /* line 14, ../../../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .form .button:before, .form .button:after {
   content: " ";
@@ -9149,3 +9163,735 @@ div.build .button:last-of-type.active {
 .form .button:hover {
   background-image: url(../Img/mail_color.png);
 }
+
+/****************************************nattan****************************************************/
+.bouton1
+{
+width:  100px;
+height: 100px;
+border: 3px solid #c02f35;
+border-radius:50%;
+background-color:black;
+color:#fff;
+text-align:center;
+float:left;
+font-family:"Berlin sans fb";
+font-size:20px;
+margin-top:10%;
+transition:0.1s;
+}
+
+.bouton1:hover
+{
+cursor:pointer;
+border: 5px solid #c02f35;
+}
+
+
+
+/*.contentP
+{
+background-color:black;
+height:600px;
+width:100%;
+border:2px solid black;
+margin-top: 45%;
+margin-bottom:50%;
+margin-left:auto;
+margin-right:auto;
+font-family:"Berlin sans fb";
+
+}
+*/
+.date{
+
+width:25%;
+color:#fff;
+font-size:50px;
+float:left;
+margin-left:-5%;
+margin-top:4%;
+}
+
+
+.parag{
+margin-left:42%;
+margin-top:5%;
+width:25%;
+color:#fff;
+font-size:50px;
+
+}
+
+
+
+
+@media screen and (min-width:850px) and (max-width: 992px) {
+
+	.content .p {
+	  margin-left: 43%;
+	  margin-top: 25%;
+	 
+
+	}
+	
+	
+	div.build p{
+		font-size: 1.00em;
+	
+	}
+	
+	div.build{
+	
+	width:70%;
+	
+	}
+	
+	div.build .button:first-of-type {
+	margin-left: 25%;
+	}
+
+}
+
+
+@media screen and (max-width:890px){
+
+
+	.content .p {
+	  margin-left: 45%;
+	  margin-top: 35%;
+	  font-size:2em;
+
+	}
+	
+	.content .p:last-child{
+	 margin-left: 45%;
+	 font-size:2em;
+	}
+
+
+
+}
+
+@media screen and (max-width:814px){
+
+	div.build p{
+		font-size: 1.00em;
+		width:70%;
+		margin-left:15%;
+	
+	
+	}
+	
+	div.build  h1{
+		font-size: 1.50em;
+	
+	
+	}
+
+
+}
+
+
+
+
+@media screen and (max-width:789px){
+
+
+		div.build p{
+		font-size: 0.90em;
+		width:70%;
+		margin-right:10%;
+		
+	
+	}
+
+
+
+}
+
+
+
+@media screen and (min-width:321px) and (max-width:769px){
+
+	
+	div.build p:last-child {
+	margin-top: 6%;
+	}
+
+	div.build  h1{
+		margin-top:2%;
+	
+	
+	}
+	
+	.navA{
+	
+	margin-left:-3%;
+	
+	
+	}
+
+
+}
+
+
+@media screen and (min-width:321px) and (max-width:400px){
+
+
+	
+	div.build {
+	
+	overflow: hidden;
+	float: left;
+	margin-top: 5%;
+	height: 400px;
+	width: 100%;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0px 0px 14px #000000;
+	-webkit-box-shadow: 0px 0px 14px #000000;
+	box-shadow: 0px 0px 14px #000000;
+	}
+	
+	
+	
+	div.build p {
+	font-size: 0.8em;
+	margin-top: 25px;
+	float: left;
+	width: 80%;
+	margin-left:8%;
+	}
+	
+	div.build  h1{
+
+	font-size: 1em;
+	float:left;
+	height:auto;
+	text-align: center;
+	width: 100%;
+	}
+	
+	
+	
+	div.build p:last-child {
+	font-size: 0.8em;
+	width: 90%;
+	margin-right:10%;
+	margin-top:10px;
+	}
+		
+	
+	div.build  h1:last-child{
+
+	font-size: 1em;
+	float:right;
+
+
+	}
+	
+	div.build h1:last-of-type {
+	width: 100%;
+	}
+	
+	.navA {
+	float: left;
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 0%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 80px;
+	position: relative;
+	margin-top: -100px;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+	
+	
+	.cercle {
+	
+	
+	height:50px;
+	width:50%;
+	
+	}
+	
+	.cercle:first-of-type{
+	margin-right:50px;
+	float:left;
+	}
+	
+
+}
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width: 850px) {
+
+	.content .p {
+	  margin-left: 35%;
+	  margin-top: 40%;
+	}
+	
+	.content .p:last-child{
+	
+	margin-top: 1%;
+	margin-left: 45%;
+
+	
+	}
+	
+	
+	div.build{
+	width: 70%;
+	}
+	
+	div.build  p{
+	
+	width:70%;
+	margin-left: 17%;
+	}
+	
+	.logo::after{
+	margin-top:15px;
+	
+	}
+	
+	
+	.logo::before{
+	margin-top:15px;
+	
+	}
+	
+	div.build .button:first-of-type {
+	margin-left: 20%;
+	}
+
+}
+
+
+@media screen and (min-width:321px) and (max-width:768px) {
+	.form{
+	height: 500px;
+	margin-top: 10%;
+	}
+	
+
+
+	.content {
+	
+	height:100%;
+	
+	}
+	.content .fd{
+	margin-top:-100px;
+	}
+	
+	.logo{
+	height:35px;
+	width:15%;
+	}
+	
+	
+	.content .p {
+	  margin-left: 50%;
+	  margin-top: 50%;
+	  font-size: 2em;
+	}
+	
+	.content .p:last-child{
+	
+	margin-top: 1%;
+	margin-left: 50%;
+	font-size: 2em;
+
+	
+	}
+	
+	
+	div.build {
+	width: 75%;
+	height: 500px;
+	margin-left: 18%;
+	margin-right: auto;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0px 0px 14px #000000;
+	-webkit-box-shadow: 0px 0px 14px #000000;
+	box-shadow: 0px 0px 14px #000000;
+	}
+		
+	div.build h1:last-of-type {
+	width: 100%;
+	text-align: center;
+	margin-top: -13px;
+	}
+	
+	.project{
+		width:100%;
+		height:500px;
+	
+	}
+	
+
+	.logo::after{
+	margin-top:15px;
+	margin-left: 80%;
+	}
+	
+	
+	.logo::before{
+	margin-top:15px;
+	
+	}
+
+	div.build .button:first-of-type {
+	margin-left: 15%;
+	}
+
+	
+}
+@media screen and (min-width:623px) and (max-width:679px) {
+
+	.content .p {
+	  margin-top: 60%;
+
+	}
+	
+	
+}
+@media screen and (min-width:590px) and (max-width:623px) {
+
+	.content .p {
+	  margin-top: 70%;
+	  margin-left: 45%;
+
+	}
+	
+	.content .p:last-child{
+	
+	margin-top: 1%;
+	margin-left: 45%;
+	font-size: 2em;
+
+	
+	}
+	
+	
+}
+
+
+@media screen and (max-width:767px) {
+
+	.form {
+	
+	margin-top:10%;
+	width:50%;
+	margin-left:20%;
+	
+	}
+	
+	
+	.form  input, .form  textarea{
+	
+	margin-left:15%;
+	
+	}
+	
+	.form .button{
+	margin-left:70%;
+	margin-top:10%;
+	
+	}
+
+}
+
+@media screen and (max-width:320px) {
+
+	.form {
+	
+	width:200px;
+	margin-left:10%;
+	border-radius:0%;
+	height:400px;
+	margin-bottom:100px;
+	}
+	
+	
+	.content {
+	float: left;
+	min-height: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0%;
+	min-height: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	min-height: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	min-height: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height:500px;
+	width:300px;
+	color:black;
+
+	}
+	.content .p{
+	
+	color:black;
+	margin-left:22%;
+	margin-top:50%;
+	}
+	
+	.content .p:last-child{
+	
+	margin-left:22%;
+	}
+	
+	
+
+	.content .fd{
+	color:black;
+	background-image:none;
+	}
+	
+	.logo{
+	
+	
+	height: 30px;
+	margin-left: 120px;
+	width: 100px;
+	
+	}
+	
+	.logo::after{
+	
+	width: 300px;
+	margin-left: 65px;
+	margin-top: 15px;
+	
+	}
+	
+	
+	.logo::before{
+	
+	width: 115px;
+	margin-left: -150px;
+	margin-top: 15px;
+	
+	
+	
+	}
+	
+	.navA {
+	float: left;
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 0%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 80px;
+	position: relative;
+	margin-top: -100px;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 20%;
+	}
+	
+	
+	.cercle {
+	border-radius: 60%;
+	height: 100px;
+	width: 50px;
+	margin-top: 100px;
+	margin-left: auto;
+	float: left;
+	margin-right: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-transition: 1s;
+	background-image: url(../Img/megaphone2.png);
+	}
+	
+	
+	
+	div.build {
+	
+	overflow: hidden;
+	float: left;
+	margin-top: 5%;
+	height: 400px;
+	width: 100%;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0px 0px 14px #000000;
+	-webkit-box-shadow: 0px 0px 14px #000000;
+	box-shadow: 0px 0px 14px #000000;
+	}
+	
+	
+	
+	div.build p {
+	font-size: 0.8em;
+	margin-top: 25px;
+	float: left;
+	width: 80%;
+	margin-left:8%;
+	}
+	
+	div.build  h1{
+
+	font-size: 1em;
+	float:left;
+	height:auto;
+	text-align: center;
+	width: 100%;
+	}
+	
+	
+	
+	div.build p:last-child {
+	font-size: 0.8em;
+	width: 90%;
+	margin-right:10%;
+	margin-top:10px;
+	}
+		
+	
+	div.build  h1:last-child{
+
+	font-size: 1em;
+	float:right;
+
+
+	}
+	
+	div.build h1:last-of-type {
+	width: 100%;
+	}
+	
+	
+	
+	.cercle {
+	
+	
+	height:50px;
+	
+	}
+	
+	.cercle:first-of-type{
+	margin-right:50px;
+	
+	}
+	
+	footer nav ul {
+	
+	margin-left: 22%;
+	
+	}
+	.form  input{
+	margin-left:37px;
+	}
+	
+	.form textarea{
+	
+	margin-left:37px;
+	
+	}
+	.form  .button{
+	margin-left:70%;
+	margin-top:10%;
+	
+	}
+	.form{
+	
+	margin-left:20%;
+	
+	}
+	
+	.bouton1{
+	margin-top: 50%;
+	margin-left: 32%;
+	}
+	
+
+	footer nav ul{
+
+	margin-left:20%;
+
+	}
+	
+	
+	footer nav ul li{
+
+	margin-left:3%;
+	width:18%;
+
+
+	}
+
+}
+
+	
+	@media (min-width:320px) and (max-width:991px){
+	
+	
+	footer nav ul{
+
+	margin-left:30%;
+
+	}
+
+
+	footer nav ul li{
+
+	margin-left:3%;
+
+
+
+	}
+
+	
+	
+	
+	
+	}
+	
+	
